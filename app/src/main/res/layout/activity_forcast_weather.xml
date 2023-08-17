@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C2BDDC8"
+    tools:context=".forcastWeather">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"></ImageView>
+
+    <TextView
+        android:id="@+id/weatherTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's rainy day today"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0°c"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="50dp"
+        android:layout_below="@id/weatherTXT">
+    </TextView>
+    <TextView
+        android:id="@+id/weatherType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/Temperature">
+    </TextView>
+    <TextView
+        android:id="@+id/weatherCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather City"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/weatherType">
+    </TextView>
+
+    <EditText
+        android:id="@+id/enterCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/weatherCity"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/semiround"
+        android:hint="Enter City"
+        android:imeOptions="actionGo"
+        android:textAlignment="center"
+        android:textColor="@color/black"></EditText>
+
+
+
+</RelativeLayout>

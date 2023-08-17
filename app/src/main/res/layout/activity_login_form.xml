@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"></ImageView>
+
+    <TextView
+        android:id="@+id/heading02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading_name_02"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:background="#C9FFFFFF"
+        android:padding="10dp"
+        android:hint="Enter User Name"
+        android:textColor="@color/black"
+        android:textAlignment="center">
+    </EditText>
+    <EditText
+        android:id="@+id/userpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#C9FFFFFF"
+        android:padding="10dp"
+        android:hint="Enter User Name"
+        android:textColor="@color/black"
+        android:textAlignment="center">
+    </EditText>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/userpass"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/startingColor"
+        android:textColor="@color/white"
+        android:padding="10dp">
+    </TextView>
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login"
+        android:text="Forgot Password?"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:id="@+id/newAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/forgotPass"
+        android:text="Don't have an account?"
+        android:textStyle="bold"
+        android:textSize="18dp">
+    </TextView>
+
+</RelativeLayout>
