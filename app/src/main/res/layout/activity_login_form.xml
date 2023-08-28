@@ -42,7 +42,7 @@
         android:layout_marginTop="50dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="Enter User Password"
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>

@@ -6,6 +6,7 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -40,8 +41,7 @@ public class forcastWeather extends AppCompatActivity {
 
     String Location_Provider = LocationManager.GPS_PROVIDER;
 
-    TextView temparatureValue, wthertype, wtherCity;
-    EditText city;
+    TextView temparatureValue, wthertype, loginBtn;
 
     LocationManager mlocationManager;
     LocationListener mlocationListener;
@@ -53,9 +53,19 @@ public class forcastWeather extends AppCompatActivity {
 
         temparatureValue = findViewById(R.id.Temperature);
         wthertype = findViewById(R.id.weatherType);
-        wtherCity= findViewById(R.id.weatherCity);
 
-        city = findViewById(R.id.enterCity);
+
+
+        loginBtn = findViewById(R.id.login);
+
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(forcastWeather.this, LoginForm.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -67,6 +77,7 @@ public class forcastWeather extends AppCompatActivity {
         super.onResume();
 
         getWeatherForCurrentLocation();
+
     }
 
 
@@ -114,6 +125,7 @@ private void getWeatherForNewCity(String newCity){
         mlocationListener = new LocationListener() {
             @Override
             public void onLocationChanged(@NonNull Location location) {
+                Toast.makeText(forcastWeather.this, "do fetch to get api", Toast.LENGTH_SHORT).show();
 
                 String Latitude = String.valueOf(location.getLatitude());
                 String Longitude = String.valueOf(location.getLongitude());
@@ -177,13 +189,14 @@ private void getWeatherForNewCity(String newCity){
 
     private void letsdoSomeNetworking(RequestParams params){
         AsyncHttpClient client = new AsyncHttpClient();
+        Toast.makeText(forcastWeather.this, "Not now", Toast.LENGTH_SHORT).show();
 
         client.get(WEATHER_URL, params, new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
               //  super.onSuccess(statusCode, headers, response);
 
-              //  Toast.makeText(forcastWeather.this, "Data Get Success", Toast.LENGTH_SHORT).show();
+                Toast.makeText(forcastWeather.this, "Data Get Success", Toast.LENGTH_SHORT).show();
 
                 weatherData weatherD = weatherData.fromJson(response);
                 updateUI(weatherD);
@@ -193,6 +206,8 @@ private void getWeatherForNewCity(String newCity){
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
                // super.onFailure(statusCode, headers, throwable, errorResponse);
+                Toast.makeText(forcastWeather.this, "Can't Access data!", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
@@ -200,7 +215,6 @@ private void getWeatherForNewCity(String newCity){
 
         temparatureValue.setText(weather.getmTemperature());
         wthertype.setText(weather.getmWeatherType());
-        wtherCity.setText(weather.getMcity());
     }
 
     @Override

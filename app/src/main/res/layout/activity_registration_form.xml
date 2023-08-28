@@ -30,7 +30,7 @@
         android:layout_marginTop="30dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="First Name"
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>
@@ -43,7 +43,7 @@
         android:layout_marginTop="30dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="Last Name"
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>
@@ -56,7 +56,7 @@
         android:layout_marginTop="30dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="User Email"
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>
@@ -69,7 +69,7 @@
         android:layout_marginTop="30dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="Mobile No."
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>
@@ -82,7 +82,7 @@
         android:layout_marginTop="30dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="Password"
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>
@@ -95,13 +95,13 @@
         android:layout_marginTop="30dp"
         android:background="#C9FFFFFF"
         android:padding="10dp"
-        android:hint="Enter User Name"
+        android:hint="Confirm Password"
         android:textColor="@color/black"
         android:textAlignment="center">
     </EditText>
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registration"

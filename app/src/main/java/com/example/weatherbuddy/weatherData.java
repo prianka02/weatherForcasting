@@ -16,7 +16,7 @@ public class weatherData {
            weatherData weatherD = new weatherData();
            weatherD.mcity = jsonObject.getString("name");
            weatherD.mCondition = jsonObject.getJSONArray("weather").getJSONObject(0).getInt("id");
-           weatherD.mWeatherType=jsonObject.getJSONArray("weather").getJSONObject(0).getString("main");
+           weatherD.mWeatherType=jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
            double tempResult = jsonObject.getJSONObject("main").getDouble("temp")-273.15;
            int roundedValue = (int)Math.rint(tempResult);
            weatherD.mTemperature = Integer.toString(roundedValue);

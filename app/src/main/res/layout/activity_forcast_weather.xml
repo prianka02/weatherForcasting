@@ -12,24 +12,25 @@
         android:layout_height="match_parent"
         android:src="@drawable/img"></ImageView>
 
-    <TextView
-        android:id="@+id/weatherTXT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="It's rainy day today"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:textSize="25dp">
-    </TextView>
+<!--    <TextView-->
+<!--        android:id="@+id/weatherTXT"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="What is the temperature today?"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        -->
+<!--        android:textSize="25dp">-->
+<!--    </TextView>-->
     <TextView
         android:id="@+id/Temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0°c"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:textSize="50dp"
-        android:layout_below="@id/weatherTXT">
+        >
     </TextView>
     <TextView
         android:id="@+id/weatherType"
@@ -42,33 +43,56 @@
         android:textStyle="bold"
         android:layout_below="@id/Temperature">
     </TextView>
+<!--    <TextView-->
+<!--        android:id="@+id/weatherCity"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Weather City"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_below="@id/weatherType">-->
+<!--    </TextView>-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/enterCity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_below="@id/weatherType"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:background="@drawable/semiround"-->
+<!--        android:hint="Enter City"-->
+<!--        android:imeOptions="actionGo"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/black"></EditText>-->
     <TextView
-        android:id="@+id/weatherCity"
+        android:id="@+id/logNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weather City"
+        android:text="Login to get more features"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:textStyle="bold"
+        android:layout_marginTop="50dp"
         android:textSize="20dp"
         android:layout_below="@id/weatherType">
     </TextView>
-
-    <EditText
-        android:id="@+id/enterCity"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/weatherCity"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/semiround"
-        android:hint="Enter City"
-        android:imeOptions="actionGo"
-        android:textAlignment="center"
-        android:textColor="@color/black"></EditText>
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/logNew"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:background="@color/startingColor"
+        android:textColor="@color/white"
+        android:padding="3dp">
+    </TextView>
 
 
 

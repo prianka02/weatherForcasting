@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C2BDDC8"
+    tools:context=".forcastWeather">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"></ImageView>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/weatherTXT"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="What is the temperature today?"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        -->
+    <!--        android:textSize="25dp">-->
+    <!--    </TextView>-->
+
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good Morning Anamul"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/lookup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A quick lookup --->"
+        android:layout_below="@id/profile"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lookup"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just for you"
+            android:paddingLeft="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="132dp"
+                android:layout_height="81dp"
+                android:layout_margin="20dp"
+                android:background="@color/startingColor"
+                android:text="Click here to see dress suggestion for today"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="74dp"
+                android:layout_margin="20dp"
+                android:background="@color/startingColor"
+                android:text="Food in nearby location"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/part2"
+            android:layout_width="346dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="132dp"
+                android:layout_height="81dp"
+                android:layout_margin="20dp"
+                android:background="@color/startingColor"
+                android:text="Keep you sugar in control today"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/startingColor"
+                android:text="It’s raining!! What bout some home made dim khichuri ?"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/part3"
+            android:layout_width="346dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:paddingLeft="70dp">
+
+            <TextView
+                android:id="@+id/last"
+                android:layout_width="132dp"
+                android:layout_height="81dp"
+                android:layout_margin="20dp"
+                android:background="@color/startingColor"
+                android:text="Don’t forget to take your umbrella"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Logout"
+            android:textColor="#E91E63"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/weatherCity"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Weather City"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textSize="20dp"-->
+    <!--        android:layout_below="@id/weatherType">-->
+    <!--    </TextView>-->
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/enterCity"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_below="@id/weatherType"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:layout_marginBottom="40dp"-->
+    <!--        android:background="@drawable/semiround"-->
+    <!--        android:hint="Enter City"-->
+    <!--        android:imeOptions="actionGo"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/black"></EditText>-->
+<!--    <TextView-->
+<!--        android:id="@+id/logNew"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login to get more features"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_below="@id/weatherType">-->
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/login"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login"-->
+<!--        android:layout_below="@id/logNew"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textSize="20dp"-->
+<!--        android:background="@color/startingColor"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:padding="3dp">-->
+<!--    </TextView>-->
+
+
+
+</RelativeLayout>
